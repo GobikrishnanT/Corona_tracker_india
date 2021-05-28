@@ -1,0 +1,413 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+
+.mainContainer{
+    
+    border: 5px solid black;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+mark{
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.mainHeader{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 15px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin: 0px 5px;
+    background: linear-gradient(45deg , rgb(212, 233, 28) , rgb(214, 85, 214));
+    width: 100%;
+    /* height: 4vh; */
+} 
+.inputFromUser{
+
+    width: 90%;
+    padding: 15px;
+}
+
+.mainForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+
+    width: 100%; 
+    padding: 10px;
+    flex-wrap: wrap;
+
+}
+.stateName , .pickDateWise{
+    box-shadow: 7px 5px 10px -3px rgb(0 , 0 , 0 , 0.56);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#stateName_Id{
+    background-color: paleturquoise;
+    outline-style: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    width: 75%;
+    border: none;
+    height: 8vh;
+}
+#datePicker_Id{
+    background-color: paleturquoise;
+    outline-style: none;
+    border-radius: 5px;
+    padding: 3.5px;
+    margin: 10px;
+    width: 75%;
+    height: 8vh;
+    border: none;
+}
+.btnDiv{
+    margin: 20px;
+    border-radius: 7px;
+    color: white;
+
+    
+}
+.btnDiv button {
+    width: 25%;
+    padding: 10px;
+    outline-style: none;
+    background: linear-gradient(45deg , rgb(183, 218, 31) , rgb(138, 233, 84));
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+}
+
+.awareness {
+    margin: 5px;
+
+    width: 90%;
+    /* height: 4vh; */
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(1, 44, 9);
+    background: rgb(229, 209, 209);
+    letter-spacing: 3px;
+}
+
+.information{
+    margin: 5px;
+
+    width: 100%;
+    
+    /* height: 50vh; */
+
+    /* Maki the flex : */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    /* Make it responsive : */
+    flex-wrap: wrap;
+    background: linear-gradient(180deg , rgb(241, 238, 238) , silver);
+}
+.affected{
+    /* flex-basis: 33.33%; */
+    height: 48vh;
+    /* border: 3px solid deeppink; */
+    /* margin: 5px; */
+}
+.recoverd{
+    /* flex-basis: 33.33%; */
+    height: 48vh;
+    /* border: 3px solid yellow; */
+    /* margin: 5px; */
+}
+.deaths{
+    /* flex-basis: 33.33%; */
+    height: 48vh;
+    /* border: 3px solid red; */
+    /* margin: 5px; */
+}
+
+/* innerContent */
+.affected , .recoverd , .deaths {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 7px 5px 10px -3px rgb(0 , 0 , 0 , 0.56);
+    border-radius: 8px;
+    margin: 10px;
+    font-family: 'Teko', sans-serif;
+}
+.affected .header{
+    padding-top: 3px;
+    font-size: 35px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    width: 100%;
+    background:linear-gradient(45deg , orange , rgb(247, 218, 165));
+    height: 8vh;
+}
+.affected .numbers_confirm{
+    width: 100%;
+    /* border: 3px solid orange; */
+    height: 30vh;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 65px;
+    
+}
+.affected .contentFooter {
+    margin: 1px;
+    width: 100%;
+    background:linear-gradient(45deg , orange , rgb(247, 218, 165));
+    height: 9vh;
+    border-radius: 15px;
+}
+
+/* Recoverd */
+.recoverd .header{
+    padding-top: 3px;
+    font-size: 35px;
+    width: 100%;
+    background:linear-gradient(45deg , rgb(41, 175, 41) , rgb(145, 243, 158));
+    height: 8vh;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.recoverd .numbers_recover{
+    width: 100%;
+    /* border: 3px solid orange; */
+    height: 30vh;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 65px;
+}
+.recoverd .contentFooter {
+    margin: 1px;
+    width: 100%;
+    background:linear-gradient(45deg , rgb(41, 175, 41) , rgb(145, 243, 158));
+    height: 9vh;
+    border-radius: 15px;
+}
+
+/* Death */
+.deaths .header{
+    padding-top: 3px;
+    font-size: 35px;
+    width: 100%;
+    background:linear-gradient(45deg , red, rgb(245, 120, 120));
+    height: 8vh;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.deaths .numbers_death{
+    width: 100%;
+    /* border: 3px solid orange; */
+    height: 30vh;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 65px;
+}
+.deaths .contentFooter {
+    margin: 1px;
+    width: 100%;
+    background:linear-gradient(45deg , red, rgb(245, 120, 120));
+    height: 9vh;
+    border-radius: 15px;
+}
+
+
+
+.charView{
+    margin: 5px;
+    width: 100%;
+    /* height: 75vh; */
+    background:linear-gradient(45deg , rgb(250, 249, 249) , silver);
+}
+.footer{
+    margin: 5px;
+
+    width: 100%;
+    background: linear-gradient(180deg , rgb(245, 82, 169) , white);
+    /* height: 30vh; */
+}
+.charView {
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+.resourceUsed{
+    padding: 15px;
+
+    margin: 5px;
+}
+.developerContact{
+    padding: 15px;
+    /* border: 2px solid orange; */
+    margin: 5px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+.common {
+    border: 0.5px dotted white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.common a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 25px;
+    flex-basis: 50%;
+}
+i{
+    /* margin: 10px;
+    border: 1px solid red; */
+    width: 10px;
+    height: 7vh;
+    font-size: 50px;
+    flex-basis: 50%;
+    
+}
+
+.LinkedIn :hover{
+    background: none;
+    border-bottom: 4px solid blue;
+}
+.Githup :hover{
+    background: none;
+    border-bottom: 4px solid black;
+}
+.emailID:hover{
+    background: none;
+    border-bottom: 4px solid red;
+}
+
+
+.developerContact a {
+    margin: 15px;
+}
+
+.articleSection{
+    padding: 25px;
+}
+.ThanksNote{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    margin-top: 5px;
+
+    height: 50vh;
+    width: 100%;
+    background: url("/frank-mckenna-eXHeq48Z-Q4-unsplash.jpg");
+    background-position: center;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+label {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Mobile */
+
+@media (min-width : 200px) {
+    .stateName{
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+    .pickDateWise{
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+    .btnDiv{
+        flex-basis: 100%;
+    }
+    .btnDiv button {
+        width: 100%;
+    }
+    .mainHeader{
+        padding: 25px;
+    }
+    mark {
+        display: block;
+    }
+    .affected{
+        flex-basis: 100%;
+    }
+    .recoverd {
+        flex-basis: 100%;
+    }
+    .deaths {
+        flex-basis: 100%;
+    }
+    .resourceUsed{
+        flex-basis: 100%;
+    }
+    .developerContact{
+        flex-basis: 100%;
+    }
+    .videoThenighan iframe{
+        width: 100%;
+    }
+}
+
+/* Media Queries : */
+/* Laptop :  and  Tablet*/
+@media (min-width : 1000px) {
+    .stateName{
+        flex-basis: 45%;
+    }
+    .pickDateWise{
+        flex-basis: 45%;
+    }
+    .btnDiv{
+        flex-basis: 100%;
+    }
+    .btnDiv button {
+        width: 25%;
+    }
+    mark{
+        display: inline;
+    }
+    .affected{
+        flex-basis: 33.33%;
+    }
+    .recoverd{
+        flex-basis: 33.33%;
+    }
+    .deaths {
+        flex-basis: 33.33%;
+    }
+    .resourceUsed{
+        flex-basis: 45%;
+    }
+    .developerContact{
+        flex-basis: 45%;
+    }
+}
+
